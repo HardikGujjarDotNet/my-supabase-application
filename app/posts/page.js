@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getSupabaseClient } from '../../lib/supabaseClient';
+import { getSupabaseClient } from '../lib/supabaseClient'; // Adjust the path as needed 
 import { useRouter } from 'next/navigation';
 
 export default function PostsList() {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getSupabaseClient } from '../lib/supabaseClient';
+import { getSupabaseClient } from '../lib/supabaseClient'; // Adjust the path as needed
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
