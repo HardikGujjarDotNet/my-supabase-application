@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { getSupabaseClient } from '../lib/supabaseClient'; // Adjust the path as needed
+import { getSupabaseClient } from '../../../lib/supabaseClient';
 import { useRouter } from 'next/navigation';
 
 export default function AddPost() {
