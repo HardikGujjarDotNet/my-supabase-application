@@ -26,7 +26,7 @@ export default function Home() {
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
       {/* Hero Section */}
       <header style={{ textAlign: 'center', padding: '60px 20px', backgroundColor: '#0070f3', color: 'white' }}>
-        <h1 style={{ fontSize: 48, marginBottom: 10 }}>My Website</h1>
+        <h1 style={{ fontSize: 48, marginBottom: 10 }}>My new Website</h1>
         <p style={{ fontSize: 20 }}>Welcome! Browse all posts below.</p>
       </header> 
 
