@@ -66,7 +66,7 @@ export default function ComingSoon() {
             </h1>
             <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#ddd', marginBottom: '30px' }}>
               We’re building something amazing for you.<br />
-              Our website is under construction and will be live soon.
+              Our website is under construction and will be live soons.
             </p>
 
             {/* Animated Loader Dots */}
