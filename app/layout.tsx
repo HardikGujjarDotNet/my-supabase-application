@@ -15,9 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kedar Developers", // Change your site title here
   description: "Website under construction", // Your description
-  icons: {
-    icon: "/favicon.ico", // Path to your favicon in public folder
-  },
+  icons: "/favicon.ico", // Path to your favicon
 };
 
 export default function RootLayout({
