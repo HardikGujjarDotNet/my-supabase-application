@@ -5,7 +5,7 @@ export default function ComingSoon() {
     <div style={{
       height: '100vh',
       width: '100%',
-      backgroundImage: 'url(https://images.unsplash.com/photo-1503387762-592deb58ef4e)',
+      backgroundImage: 'url(/images/construction1.jpg)', // ✅ local image
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       position: 'relative',
@@ -37,8 +37,7 @@ export default function ComingSoon() {
       }}>
         <h1 style={{
           fontSize: '64px',
-          marginBottom: '20px',
-          letterSpacing: '2px'
+          marginBottom: '20px'
         }}>
           🚧 Coming Soon
         </h1>
@@ -48,26 +47,9 @@ export default function ComingSoon() {
           maxWidth: '600px',
           lineHeight: '1.6'
         }}>
-          Our website is currently under construction.  
-          We’re working hard to launch something amazing. Stay tuned!
+          Our website is under construction.  
+          We’ll be live soon. Stay tuned!
         </p>
-
-        {/* Optional Button */}
-        <button style={{
-          marginTop: '30px',
-          padding: '12px 30px',
-          fontSize: '16px',
-          border: 'none',
-          borderRadius: '5px',
-          backgroundColor: '#FF6F61',
-          color: '#fff',
-          cursor: 'pointer'
-        }}
-        onMouseEnter={e => e.target.style.backgroundColor = '#ff3b2e'}
-        onMouseLeave={e => e.target.style.backgroundColor = '#FF6F61'}
-        >
-          Notify Me
-        </button>
       </div>
     </div>
   );
