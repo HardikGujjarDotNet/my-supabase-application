@@ -5,52 +5,107 @@ export default function ComingSoon() {
     <div style={{
       height: '100vh',
       width: '100%',
-      backgroundImage: 'url(/images/construction1.jpg)', // ✅ local image
+      backgroundImage: 'url(/images/construction1.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       position: 'relative',
-      fontFamily: 'Arial, sans-serif'
+      fontFamily: 'Arial, sans-serif',
+      overflow: 'hidden'
     }}>
-      
-      {/* Dark overlay */}
+
+      {/* Gradient Overlay */}
       <div style={{
         position: 'absolute',
-        top: 0,
-        left: 0,
-        height: '100%',
-        width: '100%',
-        backgroundColor: 'rgba(0,0,0,0.6)'
+        inset: 0,
+        background: 'linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4))'
       }} />
 
-      {/* Content */}
+      {/* Glass Card Content */}
       <div style={{
         position: 'relative',
         zIndex: 2,
         height: '100%',
         display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center',
-        color: '#fff',
         padding: '20px'
       }}>
-        <h1 style={{
-          fontSize: '64px',
-          marginBottom: '20px'
-        }}>
-          🚧 Coming Soon
-        </h1>
-
-        <p style={{
-          fontSize: '22px',
+        
+        <div style={{
+          backdropFilter: 'blur(12px)',
+          background: 'rgba(255,255,255,0.08)',
+          border: '1px solid rgba(255,255,255,0.2)',
+          borderRadius: '16px',
+          padding: '50px 40px',
+          textAlign: 'center',
+          color: '#fff',
           maxWidth: '600px',
-          lineHeight: '1.6'
+          boxShadow: '0 8px 30px rgba(0,0,0,0.3)',
+          animation: 'fadeIn 1.5s ease'
         }}>
-          Our website is under construction.  
-          We’ll be live soon. Stay tuned!
-        </p>
+          
+          <h1 style={{
+            fontSize: '60px',
+            marginBottom: '15px',
+            letterSpacing: '2px'
+          }}>
+            🚧 Coming Soon
+          </h1>
+
+          <p style={{
+            fontSize: '20px',
+            lineHeight: '1.6',
+            color: '#ddd',
+            marginBottom: '30px'
+          }}>
+            We’re building something amazing for you.  
+            Our website is under construction and will be live soon.
+          </p>
+
+          {/* Animated Loader */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '8px'
+          }}>
+            <span style={dotStyle}></span>
+            <span style={{ ...dotStyle, animationDelay: '0.2s' }}></span>
+            <span style={{ ...dotStyle, animationDelay: '0.4s' }}></span>
+          </div>
+
+        </div>
       </div>
+
+      {/* CSS Animations */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes bounce {
+          0%, 80%, 100% {
+            transform: scale(0);
+          }
+          40% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </div>
   );
 }
+
+const dotStyle = {
+  width: '10px',
+  height: '10px',
+  backgroundColor: '#FF6F61',
+  borderRadius: '50%',
+  animation: 'bounce 1.4s infinite ease-in-out both'
+};
