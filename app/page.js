@@ -64,9 +64,14 @@ export default function ComingSoon() {
             <h1 style={{ fontSize: '60px', marginBottom: '15px', letterSpacing: '2px' }}>
               🚧 Coming Soon
             </h1>
-            <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#ddd', marginBottom: '30px' }}>
+            <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#ddd', marginBottom: '20px' }}>
               We’re building something amazing for you.<br />
               Our website is under construction and will be live soon.
+            </p>
+
+            {/* Site Address */}
+            <p style={{ fontSize: '18px', color: '#ccc', marginBottom: '30px' }}>
+              📍 Param Antilia, Near PTC College, Vasiyar Road, Parnera, Pardi, Valsad – 369007
             </p>
 
             {/* Animated Loader Dots */}
